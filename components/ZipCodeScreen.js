@@ -37,6 +37,8 @@ export default class ZipCodeScreen extends React.Component {
                             keyExtractor={_keyExtractor}
                             renderItem={({ item }) => <ZipItem {...item} navigate={navigate} />} />
                     </View>
+                    <Text style={styles.text}>Developed By Pitchapong Charmtong</Text>
+                    <Text style={styles.text}>6010110241</Text>
                 </ImageBackground>
             </View>
         );
@@ -57,5 +59,10 @@ const styles = StyleSheet.create({
         opacity: 0.65,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    text: {
+        textAlign: 'center',
+        fontSize: 15,
+        color: 'white'
     }
 });
